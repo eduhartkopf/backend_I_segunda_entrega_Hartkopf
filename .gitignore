@@ -1,1 +1,93 @@
-/node_modules
+# -----------------------
+# Node.js / Backend
+# -----------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Coverage reports
+coverage/
+*.lcov
+
+# -----------------------
+# Frontend / React
+# -----------------------
+# React build folder
+/build/
+/public/build/
+
+# Parcel cache
+.cache/
+.parcel-cache/
+
+# Next.js
+.next/
+out/
+
+# Vite
+dist/
+node_modules/.vite/
+
+# -----------------------
+# macOS / OS Generated
+# -----------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+.fseventsd
+.Spotlight-V100
+.DocumentRevisions-V100
+*.swp
+*.swo
+*.swn
+Icon?
+._*
+
+# -----------------------
+# IDEs
+# -----------------------
+# VSCode
+.vscode/
+.history/
+
+# JetBrains IDEs
+.idea/
+
+# -----------------------
+# Docker
+# -----------------------
+docker-compose.override.yml
+docker-compose.override.yaml
+*.dockerfile
+
+# -----------------------
+# Optional / Misc
+# -----------------------
+*.tmp
+*.temp
+Thumbs.db
+ehthumbs.db
+
+# -----------------------
+# n
+package-lock.jsonpm / package lock
+# -----------------------
+yarn.lock
+pnpm-lock.yaml
