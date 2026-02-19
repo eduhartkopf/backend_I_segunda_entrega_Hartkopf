@@ -1,59 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Skate Básico",
-    "description": "Skateboard para principiantes, ideal para aprendizaje y diversión",
-    "price": 25000,
-    "thumbnail": "skate_basico.jpg",
-    "code": "SK001",
-    "stock": 5
-  },
-  {
-    "id": 2,
-    "title": "Skate Street",
-    "description": "Skateboard para trucos y street",
-    "price": 28000,
-    "thumbnail": "skate_street.jpg",
-    "code": "SK002",
-    "stock": 7
-  },
-  {
-    "id": 3,
-    "title": "Longboard Completo",
-    "description": "Longboard de 42\" con ruedas suaves",
-    "price": 45000,
-    "thumbnail": "longboard.jpg",
-    "code": "LB001",
-    "stock": 4
-  },
-  {
-    "id": 4,
-    "title": "Patin Roller Básico",
-    "description": "Patines roller para principiantes",
-    "price": 22000,
-    "thumbnail": "roller_basico.jpg",
-    "code": "RL001",
-    "stock": 6
-  },
-  {
-    "id": 5,
-    "title": "Patin Roller Profesional",
-    "description": "Patines roller con ajuste de velocidad y seguridad extra",
-    "price": 35000,
-    "thumbnail": "roller_pro.jpg",
-    "code": "RL002",
-    "stock": 3
-  },
-  {
-    "id": 6,
-    "title": "Casco Skate",
-    "description": "Casco de seguridad certificado para skate y roller",
-    "price": 8000,
-    "thumbnail": "casco_skate.jpg",
-    "code": "AC001",
-    "stock": 10
-  },
-  {
     "id": 7,
     "title": "Rodilleras",
     "description": "Protección para rodillas en patines y skate",
@@ -136,11 +82,7 @@
   },
   {
     "id": 16,
-    "title": "Skate Flip",
-    "description": "Skateboard para trucos avanzados y street",
-    "price": 32000,
-    "thumbnail": "skate_flip.jpg",
-    "code": "SK006",
-    "stock": 5
+    "title": "Ruedas Azules",
+    "price": 989898
   }
 ]
