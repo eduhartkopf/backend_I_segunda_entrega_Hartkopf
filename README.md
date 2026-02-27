@@ -23,30 +23,6 @@ Los productos se almacenan en un archivo JSON (`src/data/products.json`) utiliza
 
 ---
 
-## Estructura del proyecto
-
-segunda_entrega_Hartkopf/
-│
-├─ src/
-│ ├─ data/
-│ │ └─ products.json
-│ ├─ managers/
-│ │ └─ ProductManager.js
-│ ├─ public/
-│ │ └─ js/
-│ │ └─ realTimeProducts.js
-│ └─ routes/
-│ └─ views.router.js
-│
-├─ src/views/
-│ ├─ layouts/
-│ │ └─ main.handlebars
-│ ├─ home.handlebars
-│ └─ realTimeProducts.handlebars
-│
-└─ app.js
-
----
 
 ## Instalación
 
