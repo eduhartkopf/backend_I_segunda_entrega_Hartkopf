@@ -4,6 +4,7 @@ import Product from "../models/product.model.js";
 const router = Router();
 
 // GET - productos con paginación, filtros y orden
+
 router.get("/", async (req, res) => {
   try {
     const { limit = 10, page = 1, sort, query } = req.query;
@@ -14,6 +15,7 @@ router.get("/", async (req, res) => {
     const filter = {};
 
     // filtro por categoría o disponibilidad
+
     if (query) {
       if (query === "true" || query === "false") {
         filter.status = query === "true";
@@ -70,6 +72,7 @@ router.get("/", async (req, res) => {
 });
 
 // GET - producto por ID
+
 router.get("/:pid", async (req, res) => {
   try {
     const { pid } = req.params;
@@ -97,6 +100,7 @@ router.get("/:pid", async (req, res) => {
 });
 
 // POST - crear producto
+
 router.post("/", async (req, res) => {
   try {
     const {
@@ -158,6 +162,7 @@ router.post("/", async (req, res) => {
 });
 
 // PUT - actualizar producto
+
 router.put("/:pid", async (req, res) => {
   try {
     const { pid } = req.params;
@@ -197,6 +202,7 @@ router.put("/:pid", async (req, res) => {
 });
 
 // DELETE - eliminar producto
+
 router.delete("/:pid", async (req, res) => {
   try {
     const { pid } = req.params;

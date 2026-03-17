@@ -5,6 +5,7 @@ import Cart from "../models/cart.model.js";
 const router = Router();
 
 // HOME
+
 router.get("/", async (req, res) => {
   try {
     const products = await Product.find().lean();
@@ -16,6 +17,7 @@ router.get("/", async (req, res) => {
 });
 
 // REAL TIME PRODUCTS
+
 router.get("/realtimeproducts", async (req, res) => {
   try {
     const products = await Product.find().lean();
@@ -27,6 +29,7 @@ router.get("/realtimeproducts", async (req, res) => {
 });
 
 // VISTA DE PRODUCTOS CON PAGINACIÓN
+
 router.get("/products", async (req, res) => {
   try {
     const { limit = 10, page = 1, sort, query } = req.query;
@@ -84,6 +87,7 @@ router.get("/products", async (req, res) => {
 });
 
 // DETALLE DE PRODUCTO
+
 router.get("/products/:pid", async (req, res) => {
   try {
     const { pid } = req.params;
@@ -102,6 +106,7 @@ router.get("/products/:pid", async (req, res) => {
 });
 
 // VISTA DE CARRITO ESPECÍFICO
+
 router.get("/carts/:cid", async (req, res) => {
   try {
     const { cid } = req.params;

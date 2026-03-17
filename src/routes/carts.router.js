@@ -5,6 +5,7 @@ import Product from "../models/product.model.js";
 const router = Router();
 
 // Crear carrito
+
 router.post("/", async (req, res) => {
   try {
     const newCart = await Cart.create({ products: [] });
@@ -23,6 +24,7 @@ router.post("/", async (req, res) => {
 });
 
 // Obtener carrito con populate
+
 router.get("/:cid", async (req, res) => {
   try {
     const { cid } = req.params;
@@ -50,6 +52,7 @@ router.get("/:cid", async (req, res) => {
 });
 
 // Agregar producto al carrito
+
 router.post("/:cid/products/:pid", async (req, res) => {
   try {
     const { cid, pid } = req.params;
@@ -99,6 +102,7 @@ router.post("/:cid/products/:pid", async (req, res) => {
 });
 
 // Reemplazar todos los productos del carrito
+
 router.put("/:cid", async (req, res) => {
   try {
     const { cid } = req.params;
@@ -131,6 +135,7 @@ router.put("/:cid", async (req, res) => {
 });
 
 // Actualizar SOLO la cantidad de un producto
+
 router.put("/:cid/products/:pid", async (req, res) => {
   try {
     const { cid, pid } = req.params;
@@ -174,6 +179,7 @@ router.put("/:cid/products/:pid", async (req, res) => {
 });
 
 // Eliminar producto del carrito
+
 router.delete("/:cid/products/:pid", async (req, res) => {
   try {
     const { cid, pid } = req.params;
@@ -205,6 +211,7 @@ router.delete("/:cid/products/:pid", async (req, res) => {
 });
 
 // Vaciar carrito completo
+
 router.delete("/:cid", async (req, res) => {
   try {
     const { cid } = req.params;

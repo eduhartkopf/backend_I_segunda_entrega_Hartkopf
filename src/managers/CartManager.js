@@ -15,13 +15,15 @@ export default class CartManager {
   }
 
   async getCartById(id) {
-    // Validacion: Sino existe el carrito, el metodo mostrara UNDEFINED.
+    // Validacion:
+
     const carts = await this.getCarts();
     return carts.find((cart) => cart.id === id);
   }
 
   async createCart() {
     // Crea un nuevo carrito con un ID único.
+
     const carts = await this.getCarts();
 
     const newCart = {
@@ -36,14 +38,19 @@ export default class CartManager {
   }
 
   // agregamos el producto al carrito.
+
   async addProductToCart(cartId, productId) {
     const carts = await this.getCarts();
     const cart = carts.find((c) => c.id === cartId);
-    // validación: si el carrito no existe el metodo devuelve NULL y el router decide como responder.
+
+    // validación
+
     if (!cart) return null;
 
     const productInCart = cart.products.find((p) => p.product === productId);
+
     // validacion: si el producto ya existe en el carrito, incrementa la cantidad (quantity), sino agrega +1 a quantity.
+
     if (productInCart) {
       productInCart.quantity++;
     } else {
